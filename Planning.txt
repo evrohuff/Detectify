@@ -1,4 +1,4 @@
-Jacob - So from my understanding, we are looking towards making a web based hotspot analyzer?
+So from my understanding, we are looking towards making a web based hotspot analyzer?
 This would require both a front end team and a back end team.
 
 I would recommend that we split up into 1 front end and 2 back end.
