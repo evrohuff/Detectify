@@ -1,0 +1,10 @@
+Jacob - So from my understanding, we are looking towards making a web based hotspot analyzer?
+This would require both a front end team and a back end team.
+
+I would recommend that we split up into 1 front end and 2 back end.
+This way one person works on the design and setup of the page that the viewer will see, and
+the other 2 will work on the back end logic and pulling from specific API's and what not.
+
+We still will probably have to do some research as a team before we dive into this, but
+if we start planning what each of us are going to work on, we can better focus our efforts
+on what we will individually need to work on.
