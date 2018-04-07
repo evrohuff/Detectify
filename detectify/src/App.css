@@ -1,25 +1,81 @@
 .App {
   text-align: center;
+    background-color: #1a1a1a;
+      padding-bottom:40px;
+      padding-top:20px;
+      border-bottom-style: solid;
+      border-width: 50px;
+      border-color: #333333;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 140px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: #333333;
+  height: 250px;
+  padding-bottom:20px;
+  color: grey;
+  border-bottom-style: solid;
+  border-color: rgb(90, 186, 68);
+  border-width: 50px;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 3em;
+  font-family: "Courier New", Courier, monospace;
+  color:#222;
+  background-color: rgb(90, 186, 68);
 }
 
 .App-intro {
   font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #333333;
+  border-width: 10px;
+  border-color:  rgb(90, 186, 68);
+  color: rgb(90, 186, 68);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: white;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color: white;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 @keyframes App-logo-spin {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './detectifyLogo.png';
 import './App.css';
 
 
@@ -9,12 +9,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Detectify</h1>
+          <h1 className="App-title">D E T E C T I F Y</h1>
+          <img src= {logo} className="App-logo" alt="logo" />
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          click the button below <br /> to begin scanning local networks
         </p>
+        <button className="button">
+          <span>SCAN
+          </span>
+        </button>
       </div>
     );
   }
