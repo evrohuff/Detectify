@@ -19,6 +19,31 @@ class App extends Component {
           <span>SCAN
           </span>
         </button>
+        <br />
+        <p className="App-SafeWrap">
+        <p className="App-Safe">
+          Safe
+          </p>
+          <p className="App-intro">
+            Nothing to detect yet
+          </p>
+        </p>
+        <p className="App-WarningWrap">
+        <p className="App-Warning">
+          Warning
+        </p>
+        <p className="App-intro">
+          Nothing to detect yet
+        </p>
+        </p>
+        <p className="App-DangerWrap">
+        <p className="App-Danger">
+          Danger
+          </p>
+          <p className="App-intro">
+            Nothing to detect yet
+          </p>
+        </p>
       </div>
     );
   }
