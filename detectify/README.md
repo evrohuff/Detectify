@@ -1,7 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+﻿This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+//NODE JS DOWNLOAD
+////change directory to detectify/detectify folder
+cd *follow path*
+////install node to detectify folder
+npm install
+////must do this everytime to open local display
+//////keep command line open 
+npm start
 
 ## Table of Contents
 
