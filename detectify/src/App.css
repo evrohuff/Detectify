@@ -1,13 +1,15 @@
 .App {
   text-align: center;
-  background: linear-gradient(to bottom right, black, #222, #333333);
-  background-size: cover;
-    /*background-color: #1a1a1a;*/
-      padding-bottom: 100%;
+  background: linear-gradient(to bottom right, black, #222);
       padding-top:20px;
-      border-bottom-style: solid;
-      border-width: 50px;
-      border-color: rgb(90, 186, 68);
+      position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    border-bottom-style: solid;
+    border-color: rgb(90, 186, 68);
+    border-width: 10px;
 }
 
 .App-logo {
@@ -17,13 +19,14 @@
 
 .App-header {
   background-color: #333333;
-    background: linear-gradient(to bottom right, black,#333333);
+    background: linear-gradient(to bottom left, black,#333333);
   height: 250px;
   padding-bottom:20px;
   color: grey;
   border-bottom-style: solid;
   border-color: rgb(90, 186, 68);
-  border-width: 50px;
+  border-width: 10px;
+
 }
 
 .App-title {
@@ -37,23 +40,27 @@
   font-size: large;
   font-family: "Courier New", Courier, monospace;
   color: white;
+  background-color: #222;
+  align: center;
+  border-radius: 4px;
+  margin:0;
 }
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #333333;
+  background-color: #222;
   border-style: outset;
-  border-width: 10px;
+  border-width: 5px;
   border-color:  rgb(90, 186, 68);
   color: rgb(90, 186, 68);
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  font-size: 35px;
-  padding: 20px;
+  font-size: 40px;
+  padding: 5px;
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 20px;
 }
 .button span {
   cursor: pointer;
@@ -81,45 +88,50 @@
   opacity: 1;
   right: 0;
 }
+
+.button:hover {
+  border-color: white;
+  background-color: #33333333;
+}
+
 .App-Safe{
   text-align: center;
   display: block;
-  border-top-style: solid;
   border-top-color:  rgb(90, 186, 68);
   border-bottom-style: solid;
   border-bottom-color:  rgb(90, 186, 68);
-  background-color: #333333;
+  background-color:  rgba(0, 0, 0, 0.4);
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
   width: 300px;
+  margin-top: 0;
 }
 .App-Warning{
   text-align: center;
   display: block;
-  border-top-style: solid;
   border-top-color: yellow;
   border-bottom-style: solid;
   border-bottom-color: yellow;
-  background-color: #333333;
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
   width: 300px;
-
+  margin-top: 0;
 }
 .App-Danger{
   text-align: center;
   display: block;
-  border-top-style: solid;
   border-top-color: red;
   border-bottom-style: solid;
   border-bottom-color: red;
-  background-color: #333333;
+  background-color:  rgba(0, 0, 0, 0.4);
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
   width: 300px;
+  margin-top: 0;
 }
 .App-SafeWrap{
   display: inline-block;
@@ -129,9 +141,8 @@
   border-width: 10px;
   border-color:  rgb(90, 186, 68);
   text-align: center;
-
+  vertical-align: top;
   width: 300px;
-
 }
 .App-WarningWrap{
   display: inline-block;
@@ -141,7 +152,7 @@
   border-width: 10px;
   border-color:  yellow;
   text-align: center;
-
+  vertical-align: top;
   width: 300px;
 
 }
@@ -153,8 +164,35 @@
   border-width: 10px;
   border-color:  red;
   text-align: center;
-
+  vertical-align: top;
   width: 300px;
+}
+.App-Wrap{
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+  align: center;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-style: solid;
+  border-width: 10px;
+  border-color: #222;
+  width: 1000px;
+  margin:0;
+}
+
+.App-Wrap-Button{
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+  align: center;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-style: solid;
+  border-width: 10px;
+  width: 1000px;
+  border-color: #222;
+  margin: 0;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

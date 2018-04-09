@@ -20,17 +20,18 @@ class App extends Component {
           <h1 className="App-title">D E T E C T I F Y</h1>
           <img src= {logo} className="App-logo" alt="logo" />
         </header>
-        <p className="App-intro">
-          click the button below <br /> to begin scanning local networks
-        </p>
-        <button className="button">
+            <p className="App-intro">
+          select scan button to begin analysis of local networks
+            </p>
+        <p className="App-Wrap-Button">
+        <p className="button">
           <span>SCAN
           </span>
-        </button>
-        <br />
+        </p>
+        <p className="App-Wrap">
         <p className="App-SafeWrap">
         <p className="App-Safe">
-          Safe
+          SAFE
           </p>
           <p className="App-intro">
             {this.state.users.map(user =>
@@ -40,7 +41,7 @@ class App extends Component {
         </p>
         <p className="App-WarningWrap">
         <p className="App-Warning">
-          Warning
+          WARNING
         </p>
         <p className="App-intro">
           Nothing to detect yet
@@ -48,11 +49,13 @@ class App extends Component {
         </p>
         <p className="App-DangerWrap">
         <p className="App-Danger">
-          Danger
+          DANGER
           </p>
           <p className="App-intro">
             Nothing to detect yet
           </p>
+          </p>
+        </p>
         </p>
       </div>
     );
