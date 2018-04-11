@@ -4,12 +4,11 @@ Group project for security
 Make sure you have NPM and node installed on your computer, for you
 windows people just use this link. http://blog.teamtreehouse.com/install-node-js-npm-windows
 
-Then in order to run the project, navigate to the detectify subfolder that contains
-the public and src folder, and then run `npm start` when in that directory in the terminal,
-or however you run NPM on your computer.
-
-In the src folder, the `app.js` file is the main file that it works with right now for front
-end, so just check over that and compare it with the localhost tab that pops up to get a good
-understanding of how it works.
+Follow the following steps in order to run the project.
+1. Make sure you properly clone the git project by either using github desktop app or any other git method.
+2. Make sure you have pulled down the latest build.
+3. When in the main directory, navigate into the `detectify` folder and run `npm install` then run `npm start` to launch the browser front end.
+4. Open up a new terminal and once in the main directory, navigate into the `react-backend` folder and run `npm install` then run `PORT=3001 node bin/www` in there to start the back end.
+5. Remember that when you make changes to the back end you will need to restart the back end by ctrl-c and re running the `PORT=3001 node bin/www` command.
 
 For more documentation just visit http://www.react.express/ to learn more.
