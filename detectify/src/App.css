@@ -202,3 +202,24 @@ body{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.network {
+  border-radius: 8px;
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.App-SafeWrap .network {
+  background-color: rgba(0, 112, 0, 1);
+
+}
+
+.App-WarningWrap .network {
+  background-color: rgba(167, 180, 0, 1);
+}
+
+.App-DangerWrap .network {
+  background-color: rgba(129, 39, 45, 1);
+}
