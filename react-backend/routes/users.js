@@ -21,4 +21,29 @@ router.get('/', function(req, res, next) {
   });
 });
 
+// Testing front end
+router.get('/test', function(req, res, next){
+  var testNetworks = [];
+
+  testNetworks.push({
+    ssid: 'TestNetwork',
+    security: 'WEP',
+    score: '8'
+  });
+
+  testNetworks.push({
+    ssid: 'TestNetwork3',
+    security: 'None',
+    score: '6'
+  });
+
+  testNetworks.push({
+    ssid: 'TestNetwork2',
+    security: 'None',
+    score: '3'
+  });
+
+  res.json({testNetworks});
+});
+
 module.exports = router;

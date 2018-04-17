@@ -21,12 +21,21 @@ class App extends Component {
   fetchData() {
     var that = this;
 
-    fetch('/users')
+    /*fetch('/users')
       .then(function(response){
         return response.json();
       }).then(function(json){
         var theNetworks = Object.values(json);
         console.log(theNetworks);
+        that.setState({networks: theNetworks[0]});
+      });*/
+
+    fetch('/users/test')
+      .then(function(response){
+        return response.json();
+      }).then(function(json){
+        var theNetworks = Object.values(json);
+        console.log(theNetworks[0]);
         that.setState({networks: theNetworks[0]});
       });
   }
@@ -55,13 +64,15 @@ class App extends Component {
               </p>
               <div className="App-intro">
                 {this.state.networks.map(function(network) {
-                  return (
-                    <div key={network.id} className="network">
-                      SSID: {network.ssid}<br/>
-                      MAC: {network.mac}<br/>
-                      CHANNEL: {network.channel}<br/><br/>
-                    </div>
-                  );
+                  if(network.score > 7){
+                    return (
+                      <div key={network.id} className="network">
+                        SSID: {network.ssid}<br/>
+                        Security: {network.security}<br/>
+                        Score: {network.score}<br/><br/>
+                      </div>
+                    );
+                  }
                 })}
               </div>
             </div>
@@ -70,7 +81,17 @@ class App extends Component {
                 WARNING
               </p>
               <p className="App-intro">
-                Nothing to detect yet
+                {this.state.networks.map(function(network) {
+                  if(network.score > 3 && network.score <= 7){
+                    return (
+                      <div key={network.id} className="network">
+                        SSID: {network.ssid}<br/>
+                        Security: {network.security}<br/>
+                        Score: {network.score}<br/><br/>
+                      </div>
+                    );
+                  }
+                })}
               </p>
           </div>
             <div className="App-DangerWrap">
@@ -78,7 +99,17 @@ class App extends Component {
                 DANGER
               </p>
               <p className="App-intro">
-                Nothing to detect yet
+                {this.state.networks.map(function(network) {
+                  if(network.score <= 3){
+                    return (
+                      <div key={network.id} className="network">
+                        SSID: {network.ssid}<br/>
+                        Security: {network.security}<br/>
+                        Score: {network.score}<br/><br/>
+                      </div>
+                    );
+                  }
+                })}
               </p>
             </div>
           </div>
