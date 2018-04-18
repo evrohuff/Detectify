@@ -18,6 +18,17 @@ router.get('/', function(req, res, next) {
       tempNetworks.push(networks[i]);
     }
     res.json({tempNetworks});
+
+    //network format
+    /* {  
+          ssid: 'BHNTG1682G8822',
+          auth: 'WPA2-Personal',
+          encrypt: 'CCMP',
+          mac: '10:86:8c:b0:88:20',
+          rssi: -73.5,
+          channel: 1
+        }
+    */
   });
 });
 
