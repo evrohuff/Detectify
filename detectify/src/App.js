@@ -30,7 +30,7 @@ class App extends Component {
         that.setState({networks: theNetworks[0]});
       });*/
 
-    fetch('/users/test')
+    fetch('/users')
       .then(function(response){
         return response.json();
       }).then(function(json){
