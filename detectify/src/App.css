@@ -211,15 +211,37 @@ body{
   margin-bottom: 5px;
 }
 
+
 .App-SafeWrap .network {
   background-color: rgba(0, 112, 0, 1);
-
+      background: linear-gradient(to bottom right,rgb(90, 186, 68), rgba(0, 112, 0, 1));
+ border-color: white;
+ border-width: 3px;
+ border-style: outset;
 }
 
 .App-WarningWrap .network {
   background-color: rgba(167, 180, 0, 1);
+      background: linear-gradient(to bottom right,yellow , rgba(167, 180, 0, 1));
+  border-color: white;
+  border-width: 3px;
+  border-style: outset;
 }
 
 .App-DangerWrap .network {
   background-color: rgba(129, 39, 45, 1);
+      background: linear-gradient(to bottom right,red,rgba(129, 39, 45, 1));
+  border-color: white;
+  border-width: 3px;
+  border-style: outset;
+}
+.App-score-display {
+  font-size: 1.25em;
+  color: #333333;
+    background-color: white;
+      font-weight: bold;
+}
+.App-score {
+  font-size: 2em;
+  font-weight: bold;
 }

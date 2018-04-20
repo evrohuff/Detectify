@@ -69,7 +69,9 @@ class App extends Component {
                       <div key={network.id} className="network">
                         SSID: {network.ssid}<br/>
                         Security: {network.security}<br/>
-                        Score: {network.score}<br/><br/>
+                        <div className="App-score-display">  SCORE </div>
+                        <div className="App-score"> {network.score}<br/>
+                    </div>
                       </div>
                     );
                   }
@@ -87,8 +89,10 @@ class App extends Component {
                       <div key={network.id} className="network">
                         SSID: {network.ssid}<br/>
                         Security: {network.security}<br/>
-                        Score: {network.score}<br/><br/>
-                      </div>
+                        <div className="App-score-display">  SCORE </div>
+                        <div className="App-score"> {network.score}<br/>
+                    </div>
+                        </div>
                     );
                   }
                 })}
@@ -105,7 +109,9 @@ class App extends Component {
                       <div key={network.id} className="network">
                         SSID: {network.ssid}<br/>
                         Security: {network.security}<br/>
-                        Score: {network.score}<br/><br/>
+                        <div className="App-score-display">  SCORE </div>
+                        <div className="App-score"> {network.score}<br/>
+                    </div>
                       </div>
                     );
                   }
